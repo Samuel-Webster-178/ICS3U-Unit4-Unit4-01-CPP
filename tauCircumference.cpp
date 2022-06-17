@@ -12,7 +12,7 @@ int main() {
     // this function how the sum is calculated
     std::string strNumber;
     int intNumber;
-    int i = 0;
+    int counter1 = 0;
     int sumNumber = 0;
 
     // input
@@ -23,9 +23,9 @@ int main() {
     // process & output
     try {
         intNumber = std::stoi(strNumber);
-        while (i <= intNumber) {
-            sumNumber = sumNumber + i;
-            i += 1;
+        while (counter1 <= intNumber) {
+            sumNumber = sumNumber + counter1;
+            counter1 += 1;
         }
         std::cout << "Sum of positive integers up to ";
         std::cout << intNumber << " is " << sumNumber << "." << std::endl;
